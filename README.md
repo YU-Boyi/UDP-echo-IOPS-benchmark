@@ -26,10 +26,12 @@ Compile two programs *Server* and *Client*:
 For Windows, we provide 4 files,
 1. place that files in server computer same folder:
 > Windows_release_bin/UDP_echo_IOPS_benchmark_client.exe
+>
 > Windows_release_bin/client_config.txt
 
 2. place that files in client computer same folder:
 > Windows_release_bin/UDP_echo_IOPS_benchmark_server.exe
+> 
 > Windows_release_bin/server_config.txt
 
 3. set server's IP to *server_config.txt* first line
