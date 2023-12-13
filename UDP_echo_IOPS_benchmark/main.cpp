@@ -8,12 +8,14 @@
 # include <thread>
 # include <chrono>
 # include <iostream>
+# include <fstream>
+# include <string>
 
 //
 //  Configuration
 //
-bool server_or_client = true; // server
-auto server_ip = "127.0.0.1";
+bool server_or_client = true;
+std::string server_ip = "127.0.0.1";
 auto server_port = 10024;
 auto client_port = 10025;
 //
@@ -62,7 +64,26 @@ void as_client(void) {
     }
 }
 
+void try_read_config_file(void) {
+    std::ifstream file;
+	std::string file_path = server_or_client ?
+        "./server_config.txt" : "./client_config.txt";
+    file.open(file_path);
+    if (file.is_open()) {
+        std::string line;
+        std::getline(file, line);
+        server_ip = line;
+        std::getline(file, line);
+        if (server_or_client)
+            server_port = std::stoul(line);
+        else
+            client_port = std::stoul(line);
+    }
+    file.close();
+}
+
 int main(void) {
+    try_read_config_file();
     if (server_or_client)
         as_server();
     else
