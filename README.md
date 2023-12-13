@@ -23,7 +23,7 @@ auto server_ip = "127.0.0.1";        // set to your real IP
 auto server_port = 10024;
 auto client_port = 10025;
 //
-constexpr auto msg_length = 8;  // packet length
+constexpr auto msg_length = 8;  // packet length in bytes
 auto test_time_sec = 10;             // test time
 ```
 *Client* should set
