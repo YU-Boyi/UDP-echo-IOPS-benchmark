@@ -41,13 +41,13 @@ If *client_config.txt* or *server_config.txt* is missing, program uses default s
 ## Compilation
 You should compile two programs with different settings.
 ```cpp
-bool server_or_client = true;        // true: server     false: client
-std::string server_ip = "127.0.0.1";        // set to your real server IP
+bool server_or_client = true;         // true: server     false: client
+std::string server_ip = "127.0.0.1";  // set to your real server IP
 auto server_port = 10024;
 auto client_port = 10025;
 //
-constexpr auto msg_length = 8;  // packet length in bytes
-auto test_time_sec = 10;             // test time
+constexpr auto msg_length = 8;        // packet length in bytes
+auto test_time_sec = 10;              // test time
 ```
 *Client* should set
 > bool server_or_client = false;
