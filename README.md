@@ -5,7 +5,7 @@ We define a *UDP echo* procedure:
 1. The client sends a fixed size empty UDP packet to the server.
 2. The sever sends a same size empty UDP packet back to the client as long as client packet reached.
 
-Just like:ac
+Just like:
 1. Client says 'hello'
 2. Sever says 'hello too'
 
