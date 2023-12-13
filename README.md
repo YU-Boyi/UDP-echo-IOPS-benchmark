@@ -1,11 +1,11 @@
 # Introduce to *UDP echo IOPS benchmark*
-It is a tool program to test network delay.
+It is a tool program to **test UDP delay**.
 ## Definition of UDP echo IOPS
 We define a *UDP echo* procedure:
 1. The client sends a fixed size empty UDP packet to the server.
 2. The sever sends a same size empty UDP packet back to the client as long as client packet reached.
 
-Just like:
+Just like:ac
 1. Client says 'hello'
 2. Sever says 'hello too'
 
