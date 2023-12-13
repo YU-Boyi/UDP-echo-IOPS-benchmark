@@ -38,6 +38,13 @@ This program only uses ASIO network library and it is included in
 > ./UDP_echo_IOPS_benchmark/include
 
 so you do NOT need to install any other dependencies.
+## Usage
+Compile two programs *Server* and *Client*:
+1. Run *Server*
+2. Run *Client* in command line
+3. Wait 10 seconds(or you set interval)
+4. *Client* prints UDP-echo-IOPS in command line
+
 ## Environment
 *UDP_echo_IOPS_benchmark.sln* is configured by Visual Studio Community 2022 in Windows 10.
 
